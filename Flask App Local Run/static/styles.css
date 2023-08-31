@@ -1,0 +1,406 @@
+/* styles.css */
+
+.navbar {
+    border: 2px solid;
+}
+
+
+.navbar-center {
+             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+
+.dark-mode {
+    background-color: rgb(0, 34, 66);
+    color: #ecf0f1;
+    background-image: url('/static/images/bc-dark.png');
+}
+
+.dark-mode #main2 {
+	background: linear-gradient(to bottom, #2c3e50 20%, black);
+	
+}
+
+.dark-mode .navbar {
+	background: linear-gradient(to bottom, #2c3e50 20%, black);
+	border: 2px solid white;	
+}
+
+.dark-mode .nav-item a {
+    color: white;
+}
+
+.dark-mode .bigDiv {
+	background-color: #e2e2e2;
+	color: black;
+	}
+	
+.dark-mode #main3 {	
+	 background-color: gray;
+}
+
+
+body {
+    font-family: Ubuntu;
+    background-image: url('/static/images/bc.png');
+    background-position: center 0;
+    background-position: top; 
+    background-repeat: no-repeat;
+    background-size: 2000px 920px;
+    background-color:#f8f9f9;  
+}
+
+
+.mainn {
+	margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+
+
+#main2 {
+	margin: 0 auto; 
+	margin-top: -30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            background: linear-gradient(to bottom, white 70%, rgb(0, 69, 133));
+           
+           width: 80vh; 
+            padding: 70px;
+            border: 2px solid rgb(0, 69, 133); 
+            border-radius: 20px;
+}
+
+#main3 {
+	margin: 0 auto; 
+	margin-top: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+           background-color:white;
+           /* Set a fixed height so it's visible */
+           height: 80vh;
+           width: 80vh; 
+            padding: 70px;
+            border-radius: 20px;
+            position: relative; 
+             z-index: 2;
+}
+
+
+
+.btn{
+	border:1px solid;
+}
+
+#main4{
+	margin: 0 auto;
+	margin-top:-25vh;
+	width: 180vh; 
+	height:auto;
+	position: relative; 
+	padding-bottom:200px;
+	background-color: rgb(0, 69, 133);
+	 z-index: 1;
+	  border-radius:10px;
+	  
+	  display: flex;
+	  justify-content: center; 
+	  
+	  color:white;
+}
+.bigDiv {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+	border: 1px solid;
+	border-radius:10px;
+	padding:20px;
+	margin-bottom: 2vh;
+}
+
+.li-title {
+	font-weight: bold;
+	font-size: 2vh;
+	margin-bottom:1vh;
+}
+
+#ip {
+    width:60vh;
+    height: 40px;
+    font-size: 20px;
+    color: blue; 
+    font-weight: bold; 
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#results-container {
+    overflow-y: auto; 
+    max-height: calc(100vh - 200px); 
+    overflow-x: hidden;
+}
+
+#load-more-button {
+    margin-top: 20px; 
+}
+
+.d-inline-flex.focus-ring {
+    --bs-focus-ring-color: yellow;; 
+}
+
+
+
+.blur-bc {
+    backdrop-filter: blur(30px); 
+}
+
+.tags{  border: 2px solid; padding: 10px; box-shadow: 5px 5px yellow; margin-right: 15px; margin-bottom: 15px; font-weight:bold; font-size:20px; 
+}
+
+.tsg {width:60vh;}
+
+.dots-bars-5 {
+  width: 40px;
+  height: 30px;
+  --c: linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0    100%/8px 30px,
+    var(--c) 50%  100%/8px 20px,
+    var(--c) 100% 100%/8px 10px;
+  background-repeat: no-repeat;
+  position: relative;
+  clip-path: inset(-100% 0);
+  margin-left:20px;
+  padding:10px; 
+}
+.dots-bars-5:before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:currentColor;
+  left:-16px;
+  top:0;
+  animation: 
+    db5-1 2s   linear infinite,
+    db5-2 0.5s cubic-bezier(0,200,.8,200) infinite;
+}
+
+@keyframes db5-1 {
+  0%   {left:-16px;transform:translateY(-8px)}
+  100% {left:calc(100% + 8px);transform:translateY(22px)}
+}
+
+@keyframes db5-2 {
+  100% {top:-0.1px}
+}
+
+.inline-animation {
+  display: inline-block; 
+  vertical-align: middle;
+}
+
+#radio{
+	width:60vh;
+}
+
+#about{
+	 width:100vh;
+	}
+
+.radio-container {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    padding:1vh;
+    color:black;
+    background-color:white;
+    border-radius: 2px;
+}
+
+
+
+input[type="radio"] {
+    display: none; 
+}
+
+.custom-radio {
+    width: 20px; 
+    height: 20px;
+    border: 2px solid #333; 
+    border-radius: 50%; 
+    margin-right: 5px; 
+}
+
+
+input[type="radio"]:checked + .custom-radio {
+    background-color: #333; 
+}
+
+#ip3 {
+	width:50vh;
+}
+@media (max-width: 768px) {
+
+	.navbar {
+        border: 1px solid;
+    }
+
+    .navbar-center {
+        text-align: center;
+    }
+    
+    
+    body {
+        font-family: Ubuntu;
+        background-image: url('/static/images/bc.png');
+        background-position: center 0;
+        background-position: top; 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-color: #f8f9f9;
+    }
+    
+
+    .mainn {
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        color: white;
+    }
+
+    
+    #main2 {
+        margin: 0 auto;
+        margin-top: 10vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        background: linear-gradient(to bottom, white 70%, rgb(0, 69, 133));
+        width: 90%; 
+        padding: 40px; 
+        border: 2px solid rgb(0, 69, 133);
+        border-radius: 20px;
+    }
+
+    #main3 {
+        margin: 0 auto;
+        margin-top: 5vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        height: auto; 
+        width: 90%; 
+        padding: 40px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .radio-container {
+        display: block; 
+        margin-top: 10px;
+        }
+    
+   
+    	
+    	#ip2 {
+        width: 90vw; 
+        height: 20vh; 
+        padding: 10px; 
+        background-color: #f2f2f2;
+        color: blue;
+    }
+    
+    #main4 {
+        margin: 0 auto;
+        margin-top: -10vh; 
+        width: 90vw; 
+        height: auto; 
+        background-color: rgb(0, 69, 133);
+        border-radius: 10px;
+        display: block;
+         
+        color: white;
+    }
+    
+    #ip {
+    	width:90vw;
+    }
+	
+	.tsg {
+		width:90vw;
+	}
+	
+	#radio {
+		width:90vw;
+	}
+   
+    .bigDiv {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 1vh;
+    }
+
+   
+    .li-title {
+        font-weight: bold;
+        font-size: 2vh;
+        margin-bottom: 0.5vh; 
+    }
+    
+    #about {
+        margin-top: 200px; 
+        width: 90vw; 
+        font-size: 16px; 
+    }
+    
+    #quora-form {
+    	width: 90vw;
+    }
+    
+    #ip3 {
+    	width: 90vw;
+    }
+    
+    #ip4 {
+    	width: 90vw;
+    }
+}
+
+
+
+
+
