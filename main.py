@@ -11,51 +11,33 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/get_tags', methods = ['GET', 'POST'])
+@app.route('/get_tags', methods = ['POST'])
 def predict():
-	if request.method == 'GET':
-		question = request.args.get("question")
-		description = request.args.get("description")
-		selected_option = request.args.get('model')
-		if question is None:
-		    return jsonify({"error": "Missing 'question' parameter"}), 400
-		if description is None:
-			description = ""
-		if selected_option is None:
-			selected_option = 'svc'
+	if request.is_json:
+		data = request.get_json()
+		question = data.get('title', '')
+		description = data.get('body', '')
+		selected_option = data.get('model', '')
 		tags = predict_tags(question, description, selected_option)
-
-		return tags
 		
-
-	elif request.method == 'POST':
+	else:
 		question = request.form["question"]
 		description = request.form["describe"]
 		selected_option = request.form.get('option')
 
 		tags = predict_tags(question, description, selected_option)
 
-		return tags
+	return tags
 
 
-@app.route('/process_quora_form', methods=['GET', 'POST'])
+@app.route('/process_quora_form', methods=['POST'])
 def process_quora_form():
-	if request.method == 'GET':
-		question = request.args.get('question')
-		description = request.args.get('description')
-		if question is None:
-		    return jsonify({"error": "Missing 'question' parameter"}), 400
-		if description is None:
-			description = ""
-		text = question + " " + description
-		tags = process_data(text)
-		return tags
-	elif request.method == 'POST':
 		question = request.form['quora_question']
 		description = request.form['quora_description']
 		text = question+" "+description
 		tags = process_data(text)
 		return tags	
+		
 
 scheduler = BackgroundScheduler()
 if __name__ == "__main__":
