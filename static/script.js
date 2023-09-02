@@ -91,7 +91,7 @@ let taggedParam;
             })
             .then(response => response.json())
             .then(tags => {
-            	taggedParam = tags.join(';');
+            	taggedParam = tags.slice(0, 2).join(';');
             	clearResults();
             	collapseDiv();
             	collapseRadioDiv();
