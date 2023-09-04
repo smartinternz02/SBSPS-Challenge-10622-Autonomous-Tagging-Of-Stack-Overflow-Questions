@@ -40,6 +40,8 @@ cd TagOverflow
 Make sure you have Python 3 or above installed
 <br><br>
 <h2>Windows</h2>
+<br>
+
 > [!NOTE]
 > Creating virtual environment on Windows is NOT recommended.
 
