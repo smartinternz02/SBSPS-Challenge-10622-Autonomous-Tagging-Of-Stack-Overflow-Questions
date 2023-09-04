@@ -43,7 +43,7 @@ Make sure you have Python 3 or above installed
 <br>
 
 > [!NOTE]
-> Creating virtual environment on Windows is NOT recommended.
+> Creating virtual environment on Windows is NOT recommended for this web app.
 
 1. Run setup.py for installing necessary libraries and files
    ```
