@@ -18,7 +18,8 @@ This webapp can be directly accessed here (May take some time to boot up)
 
 <br><br>
 See the Demo here: https://www.youtube.com/watch?v=-w_qxBsDass (PS: Not a presentation expert 🙃)
-Project Report: Click Me!
+<br>
+Project Report: [Click Me!](https://drive.google.com/file/d/1vSCQqTyhUhDYr-3QECOfjM_6pFklC4k7/view?usp=sharing).
 <br><br>
 # Setup
 Download the Zip and Extract. Rename with a short name.
@@ -79,3 +80,7 @@ Now if you are on Ubuntu, you can create a virtual environment.
 
 Open browser and go to
 > http://localhost:5000/
+
+
+<br><br>
+So, now next time you go on StackOverflow, you save your time and continue working on your project 👍 
